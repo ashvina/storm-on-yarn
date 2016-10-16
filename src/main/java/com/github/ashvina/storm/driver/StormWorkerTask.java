@@ -14,8 +14,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class StormWorkerTask implements Task {
-
-  static final Logger logger = Logger.getLogger(StormWorkerTask.class.getName());
+  private static final Logger logger = Logger.getLogger(StormWorkerTask.class.getName());
   private final Path stormConfFile;
   Object lock = new Object();
   private Path stormPackagePath;
